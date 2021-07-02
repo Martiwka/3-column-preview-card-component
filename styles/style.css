@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --box-1: hsl(31, 77%, 52%);
+  --box-2: hsl(184, 100%, 22%);
+  --box-3: hsl(179, 100%, 13%);
+  --paragraphs: hsla(0, 0%, 100%, 0.75);
+  --background-headings-border: hsl(0, 0%, 95%);
+  --transparent: hsla(0, 0%, 0%, 0);
+  font-size: 15px;
+}
+body {
+  background-color: var(--background-headings-border);
+}
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.box-1 {
+  background-color: var(--box-1);
+  border-radius: 6px 6px 0 0;
+}
+
+.box-2 {
+  background-color: var(--box-2);
+}
+
+.box-3 {
+  background-color: var(--box-3);
+  border-radius: 0 0 6px 6px;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  color: var(--background-headings-border);
+  text-transform: uppercase;
+  font-size: 38px;
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: var(--paragraphs);
+}
+
+.button {
+  font-family: "Lexend Deca", sans-serif;
+  mix-blend-mode: screen;
+  font-weight: bold;
+  padding: 12px 32px;
+  border-radius: 50px;
+  border-color: var(--background-headings-border);
+  border-style: solid;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--transparent);
+  color: var(--background-headings-border);
+  mix-blend-mode: initial;
+}
+@media screen and (max-width: 375px) {
+  .main {
+    width: 300px;
+    margin: -310px 0 0 -150px;
+  }
+  .box-1 {
+    width: 100%;
+    height: 425px;
+    padding: 45px;
+  }
+
+  .box-2 {
+    width: 100%;
+    height: 425px;
+    padding: 45px;
+  }
+
+  .box-3 {
+    width: 100%;
+    height: 425px;
+    padding: 45px;
+    margin-bottom: 70px;
+  }
+  .svg {
+    margin-bottom: 25px;
+  }
+  h2 {
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
